@@ -13,16 +13,13 @@ body {
     li {
         border-bottom: 1px solid black;
         list-style: none;
-    }
-    
-    li:last-child {
-        border-bottom: 0;
-        list-style: none;
-//        background-color: blue;
-    }
-    
-    i {
-        color: white;
+        
+        &:last-child
+         {
+            border-bottom: 0;
+            list-style: none;
+            background-color: blue;
+        }
     }
 }
 
@@ -31,6 +28,10 @@ body {
     margin: auto;
     background-color: white;
     border: 1px solid black;
+    
+    h1 {
+        text-align: center;
+    }
     
     ul {
         padding: 0;
@@ -47,17 +48,19 @@ body {
     background-color: #990033;
     color: white;
     padding: 10px 10px;
+
+    i {
+        color: white;
+    }
 } 
 
 .select {
-    width: 65%;
     float: left;
 //    border-radius: 5px;
 }
 
 .flecha {
     float: right;
-    font-size: 16px;
 }
 
 .link {
@@ -65,12 +68,18 @@ body {
         padding: 10px;
         color: black;
     
-    }
+}
 
 .items {
-    
-    a:hover {
-            background-color: grey;
+    a {
+        text-decoration: none;
+        
+        &:hover {
+            background-color: #2ea417;
+            color: black;
+        }
     }
+
 }
+
 /*# sourceMappingURL=main.css.map */
